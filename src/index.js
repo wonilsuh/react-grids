@@ -15,7 +15,13 @@ const Wrap = (props) => (
 )
 
 const Column = (props) => (
-	<div className={`grids-col-${props.base || '12'}-${props.span || '6'}${props.reverseGrid ? '-reverse-grid' : ''} ${props.className ? props.className : ''}`} style={props.style}>{props.children}</div>
+	<div 
+		className={
+			`grids-col-${props.base || '12'}-${props.span || '6'}${props.reverseGrid ? '-reverse-grid' : ''}
+			${props.className ? props.className : ''}`
+		} 
+		style={props.style}
+	>{props.children}</div>
 )
 
 const Grids = {

@@ -57,13 +57,16 @@ var loaders = [
 
 module.exports = {
 	"entry":{
-		"app":"./src/index.js"
+		"react-grids-component":"./src/index.js",
+		"css":"./src/css-loader.js"
 	},
 	"output":{
-		"filename":"index.js",
+		"filename":"[name].lib.js",
 		"path":"./dist/js/",
-		"chunkFilename":"bundles/[name]-[id]-[hash].bundle.js",
-		"publicPath":"js/"
+		"chunkFilename":"[name].lib.js",
+		"publicPath":"js/",
+		libraryTarget: 'umd',
+		library: 'ReactComponentNpm'
 	},
 	"module":{
 		"loaders":loaders

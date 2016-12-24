@@ -1,8 +1,8 @@
 {
   "name": "react-grids",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "grid system for react",
-  "main": "dist/index.js",
+  "main": "dist/js/react-grid-component.lib.js",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.5.4",
