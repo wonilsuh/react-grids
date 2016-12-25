@@ -36,7 +36,7 @@ const MainView = () => {
 						Columns: {`${columns.reduce( (prev, column) => `${prev} - ${column}`, '')} / ${base}`.substring(2)}
 					</Grids.Column>
 				</Grids.Wrap>
-				<Grids.Wrap>{
+				<Grids.Wrap cutoff={640}>{
 					columns.map( (span, spanCount) => (
 						<Grids.Column base={base} span={span} key={`span-${baseCount}-${columnsCount}-${spanCount}`}>
 							<div className="cell">{span}</div>

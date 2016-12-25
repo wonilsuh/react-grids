@@ -214,52 +214,11 @@
 	&.align-right{
 		justify-content:flex-end;
 	}
-}
 
-@media only screen and (max-width:799px){
-
-	.grids-wrap:not([class*="cutoff-"]),
-	.grids-wrap.layout-flip:not([class*="cutoff-"]){
+	&.cutoff{
 		flex-direction:column;
-
-		[class^="grids-col-12-"],
-		[class^="grids-col-10-"]{
-			width:100%;
-		}
-	}
-}
-
-@media only screen and (max-width:699px){
-	.grids-wrap.cutoff-699,
-	.grids-wrap.layout-flip.cutoff-699{
-		flex-direction:column;
-
-		[class^="grids-col-12-"],
-		[class^="grids-col-10-"]{
-			width:100%;
-		}
-	}
-}
-
-@media only screen and (max-width:599px){
-	.grids-wrap.cutoff-599,
-	.grids-wrap.layout-flip.cutoff-599{
-		flex-direction:column;
-
-		[class^="grids-col-12-"],
-		[class^="grids-col-10-"]{
-			width:100%;
-		}
-	}
-}
-
-@media only screen and (max-width:499px){
-	.grids-wrap.cutoff-499,
-	.grids-wrap.layout-flip.cutoff-499{
-		flex-direction:column;
-
-		[class^="grids-col-12-"],
-		[class^="grids-col-10-"]{
+		[class*="grids-col-"],
+		[class*="grids-col-"]{
 			width:100%;
 		}
 	}
