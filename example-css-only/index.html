@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>CSS only exapmle</title>
-		<script src="../dist/js/css.lib.js"></script>
+		<script src="../dist/js/react-grids-css-loader.js"></script>
 		<style>
 
 		body{
@@ -10,8 +10,8 @@
 				font-family:Helvetica Neue, Helvetica, Arial, sans serif;
 		}
 
-		h1{
-			font-size:0.8em;
+		h3{
+			margin:0.5em 0 0;
 		}
 
 		.cell{
@@ -34,6 +34,13 @@
 		<div class="grids-wrap">
 			<div class="grids-col-12-12">
 				<div class="heading">
+					<h3>12 column grid</h3>
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-12-12">
+				<div class="heading">
 					12 / 12
 				</div>
 			</div>
@@ -41,7 +48,7 @@
 		<div class="grids-wrap">
 			<div class="grids-col-12-12">
 				<div class="cell">
-					Left column
+					Column
 				</div>
 			</div>
 		</div>
@@ -260,6 +267,77 @@
 			<div class="grids-col-12-1">
 				<div class="cell">
 					1
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-12-12">
+				<div class="heading">
+					<h3>11 column grid</h3>
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-12-12">
+				<div class="heading">
+					11 / 11
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-11-11">
+				<div class="cell">
+					Column
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-12-12">
+				<div class="heading">
+					3, 8 / 11
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-11-3">
+				<div class="cell">
+					Left column
+				</div>
+			</div>
+			<div class="grids-col-11-8">
+				<div class="cell">
+					Right column
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-12-12">
+				<div class="heading">
+					2, 6, 3 / 11
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-11-2">
+				<div class="cell">
+					Left column
+				</div>
+			</div>
+			<div class="grids-col-11-6">
+				<div class="cell">
+					Center column
+				</div>
+			</div>
+			<div class="grids-col-11-5">
+				<div class="cell">
+					Right column
+				</div>
+			</div>
+		</div>
+		<div class="grids-wrap">
+			<div class="grids-col-12-12">
+				<div class="heading">
+					<h3>Also supports 1 to 10 column grids</h3>
 				</div>
 			</div>
 		</div>

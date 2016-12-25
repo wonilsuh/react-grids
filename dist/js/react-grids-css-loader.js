@@ -51,25 +51,27 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	__webpack_require__(1);
+	__webpack_require__(32);
 
 /***/ },
-/* 1 */
+
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(2);
+	var content = __webpack_require__(33);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(35)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -86,21 +88,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 2 */
+
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(34)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".grids-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  box-sizing: border-box;\n  width: 100%; }\n  .grids-wrap.layout-flip {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse; }\n  .grids-wrap .grids-col-12-1 {\n    width: 8.33333%; }\n  .grids-wrap .grids-col-12-2 {\n    width: 16.66667%; }\n  .grids-wrap .grids-col-12-3 {\n    width: 25%; }\n  .grids-wrap .grids-col-12-4 {\n    width: 33.33333%; }\n  .grids-wrap .grids-col-12-5 {\n    width: 41.66667%; }\n  .grids-wrap .grids-col-12-6 {\n    width: 50%; }\n  .grids-wrap .grids-col-12-7 {\n    width: 58.33333%; }\n  .grids-wrap .grids-col-12-8 {\n    width: 66.66667%; }\n  .grids-wrap .grids-col-12-9 {\n    width: 75%; }\n  .grids-wrap .grids-col-12-10 {\n    width: 83.33333%; }\n  .grids-wrap .grids-col-12-11 {\n    width: 91.66667%; }\n  .grids-wrap .grids-col-12-12 {\n    width: 100%; }\n  .grids-wrap .grids-col-10-1 {\n    width: 10%; }\n  .grids-wrap .grids-col-10-2 {\n    width: 20%; }\n  .grids-wrap .grids-col-10-3 {\n    width: 30%; }\n  .grids-wrap .grids-col-10-4 {\n    width: 40%; }\n  .grids-wrap .grids-col-10-5 {\n    width: 50%; }\n  .grids-wrap .grids-col-10-6 {\n    width: 60%; }\n  .grids-wrap .grids-col-10-7 {\n    width: 70%; }\n  .grids-wrap .grids-col-10-8 {\n    width: 80%; }\n  .grids-wrap .grids-col-10-9 {\n    width: 90%; }\n  .grids-wrap .grids-col-10-10 {\n    width: 100%; }\n  .grids-wrap .grids-col-10-1-reverse-grid {\n    width: 100%; }\n  .grids-wrap .grids-col-10-2-reverse-grid {\n    width: 50%; }\n  .grids-wrap .grids-col-10-3-reverse-grid {\n    width: 33.33333%; }\n  .grids-wrap .grids-col-10-4-reverse-grid {\n    width: 25%; }\n  .grids-wrap .grids-col-10-5-reverse-grid {\n    width: 20%; }\n  .grids-wrap .grids-col-10-6-reverse-grid {\n    width: 16.66667%; }\n  .grids-wrap .grids-col-10-7-reverse-grid {\n    width: 14.28571%; }\n  .grids-wrap .grids-col-10-8-reverse-grid {\n    width: 12.5%; }\n  .grids-wrap .grids-col-10-9-reverse-grid {\n    width: 11.11111%; }\n  .grids-wrap .grids-col-10-10-reverse-grid {\n    width: 10%; }\n  .grids-wrap.align-left {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start; }\n  .grids-wrap.align-center {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center; }\n  .grids-wrap.align-right {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end; }\n\n@media only screen and (max-width: 799px) {\n  .grids-wrap:not([class*=\"cutoff-\"]),\n  .grids-wrap.layout-flip:not([class*=\"cutoff-\"]) {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap:not([class*=\"cutoff-\"]) [class^=\"grids-col-12-\"],\n    .grids-wrap:not([class*=\"cutoff-\"]) [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip:not([class*=\"cutoff-\"]) [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip:not([class*=\"cutoff-\"]) [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n\n@media only screen and (max-width: 699px) {\n  .grids-wrap.cutoff-699,\n  .grids-wrap.layout-flip.cutoff-699 {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff-699 [class^=\"grids-col-12-\"],\n    .grids-wrap.cutoff-699 [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip.cutoff-699 [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip.cutoff-699 [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n\n@media only screen and (max-width: 599px) {\n  .grids-wrap.cutoff-599,\n  .grids-wrap.layout-flip.cutoff-599 {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff-599 [class^=\"grids-col-12-\"],\n    .grids-wrap.cutoff-599 [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip.cutoff-599 [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip.cutoff-599 [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n\n@media only screen and (max-width: 499px) {\n  .grids-wrap.cutoff-499,\n  .grids-wrap.layout-flip.cutoff-499 {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff-499 [class^=\"grids-col-12-\"],\n    .grids-wrap.cutoff-499 [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip.cutoff-499 [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip.cutoff-499 [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n", ""]);
+	exports.push([module.id, ".grids-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  box-sizing: border-box;\n  width: 100%;\n  /*-----------------------------------------------------\n\t *\t12 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t11 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t10 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t9 columns\n\t */\n  /*-----------------------------------------------------\n\t *\t8 columns\n\t */\n  /*-----------------------------------------------------\n\t *\t7 columns\n\t */ }\n  .grids-wrap.layout-flip {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse; }\n  .grids-wrap .grids-col-12-1 {\n    width: 8.33333%; }\n  .grids-wrap .grids-col-12-2 {\n    width: 16.66667%; }\n  .grids-wrap .grids-col-12-3 {\n    width: 25%; }\n  .grids-wrap .grids-col-12-4 {\n    width: 33.33333%; }\n  .grids-wrap .grids-col-12-5 {\n    width: 41.66667%; }\n  .grids-wrap .grids-col-12-6 {\n    width: 50%; }\n  .grids-wrap .grids-col-12-7 {\n    width: 58.33333%; }\n  .grids-wrap .grids-col-12-8 {\n    width: 66.66667%; }\n  .grids-wrap .grids-col-12-9 {\n    width: 75%; }\n  .grids-wrap .grids-col-12-10 {\n    width: 83.33333%; }\n  .grids-wrap .grids-col-12-11 {\n    width: 91.66667%; }\n  .grids-wrap .grids-col-12-12 {\n    width: 100%; }\n  .grids-wrap .grids-col-11-1 {\n    width: 9.09091%; }\n  .grids-wrap .grids-col-11-2 {\n    width: 18.18182%; }\n  .grids-wrap .grids-col-11-3 {\n    width: 27.27273%; }\n  .grids-wrap .grids-col-11-4 {\n    width: 36.36364%; }\n  .grids-wrap .grids-col-11-5 {\n    width: 45.45455%; }\n  .grids-wrap .grids-col-11-6 {\n    width: 54.54545%; }\n  .grids-wrap .grids-col-11-7 {\n    width: 63.63636%; }\n  .grids-wrap .grids-col-11-8 {\n    width: 72.72727%; }\n  .grids-wrap .grids-col-11-9 {\n    width: 81.81818%; }\n  .grids-wrap .grids-col-11-10 {\n    width: 90.90909%; }\n  .grids-wrap .grids-col-11-11 {\n    width: 100%; }\n  .grids-wrap .grids-col-10-1 {\n    width: 10%; }\n  .grids-wrap .grids-col-10-2 {\n    width: 20%; }\n  .grids-wrap .grids-col-10-3 {\n    width: 30%; }\n  .grids-wrap .grids-col-10-4 {\n    width: 40%; }\n  .grids-wrap .grids-col-10-5 {\n    width: 50%; }\n  .grids-wrap .grids-col-10-6 {\n    width: 60%; }\n  .grids-wrap .grids-col-10-7 {\n    width: 70%; }\n  .grids-wrap .grids-col-10-8 {\n    width: 80%; }\n  .grids-wrap .grids-col-10-9 {\n    width: 90%; }\n  .grids-wrap .grids-col-10-10 {\n    width: 100%; }\n  .grids-wrap .grids-col-9-1 {\n    width: 11.11111%; }\n  .grids-wrap .grids-col-9-2 {\n    width: 22.22222%; }\n  .grids-wrap .grids-col-9-3 {\n    width: 33.33333%; }\n  .grids-wrap .grids-col-9-4 {\n    width: 44.44444%; }\n  .grids-wrap .grids-col-9-5 {\n    width: 55.55556%; }\n  .grids-wrap .grids-col-9-6 {\n    width: 66.66667%; }\n  .grids-wrap .grids-col-9-7 {\n    width: 77.77778%; }\n  .grids-wrap .grids-col-9-8 {\n    width: 88.88889%; }\n  .grids-wrap .grids-col-9-9 {\n    width: 100%; }\n  .grids-wrap .grids-col-8-1 {\n    width: 12.5%; }\n  .grids-wrap .grids-col-8-2 {\n    width: 25%; }\n  .grids-wrap .grids-col-8-3 {\n    width: 37.5%; }\n  .grids-wrap .grids-col-8-4 {\n    width: 50%; }\n  .grids-wrap .grids-col-8-5 {\n    width: 62.5%; }\n  .grids-wrap .grids-col-8-6 {\n    width: 75%; }\n  .grids-wrap .grids-col-8-7 {\n    width: 87.5%; }\n  .grids-wrap .grids-col-8-8 {\n    width: 100%; }\n  .grids-wrap .grids-col-7-1 {\n    width: 14.28571%; }\n  .grids-wrap .grids-col-7-2 {\n    width: 28.57143%; }\n  .grids-wrap .grids-col-7-3 {\n    width: 42.85714%; }\n  .grids-wrap .grids-col-7-4 {\n    width: 57.14286%; }\n  .grids-wrap .grids-col-7-5 {\n    width: 71.42857%; }\n  .grids-wrap .grids-col-7-6 {\n    width: 85.71429%; }\n  .grids-wrap .grids-col-7-7 {\n    width: 100%; }\n  .grids-wrap.align-left {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start; }\n  .grids-wrap.align-center {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center; }\n  .grids-wrap.align-right {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end; }\n\n@media only screen and (max-width: 799px) {\n  .grids-wrap:not([class*=\"cutoff-\"]),\n  .grids-wrap.layout-flip:not([class*=\"cutoff-\"]) {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap:not([class*=\"cutoff-\"]) [class^=\"grids-col-12-\"],\n    .grids-wrap:not([class*=\"cutoff-\"]) [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip:not([class*=\"cutoff-\"]) [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip:not([class*=\"cutoff-\"]) [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n\n@media only screen and (max-width: 699px) {\n  .grids-wrap.cutoff-699,\n  .grids-wrap.layout-flip.cutoff-699 {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff-699 [class^=\"grids-col-12-\"],\n    .grids-wrap.cutoff-699 [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip.cutoff-699 [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip.cutoff-699 [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n\n@media only screen and (max-width: 599px) {\n  .grids-wrap.cutoff-599,\n  .grids-wrap.layout-flip.cutoff-599 {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff-599 [class^=\"grids-col-12-\"],\n    .grids-wrap.cutoff-599 [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip.cutoff-599 [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip.cutoff-599 [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n\n@media only screen and (max-width: 499px) {\n  .grids-wrap.cutoff-499,\n  .grids-wrap.layout-flip.cutoff-499 {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff-499 [class^=\"grids-col-12-\"],\n    .grids-wrap.cutoff-499 [class^=\"grids-col-10-\"],\n    .grids-wrap.layout-flip.cutoff-499 [class^=\"grids-col-12-\"],\n    .grids-wrap.layout-flip.cutoff-499 [class^=\"grids-col-10-\"] {\n      width: 100%; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 3 */
+
+/***/ 34:
 /***/ function(module, exports) {
 
 	/*
@@ -156,7 +160,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 4 */
+
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -408,6 +413,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }
-/******/ ])
+
+/******/ })
 });
 ;

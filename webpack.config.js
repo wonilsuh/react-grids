@@ -57,12 +57,13 @@ var loaders = [
 
 module.exports = {
 	"entry":{
-		"react-grids-component":"./src/index.js",
-		"css":"./src/css-loader.js"
+		"dist/js/react-grids-component.lib":"./src/index.js",
+		"dist/js/react-grids-css-loader":"./src/css-loader.js",
+		"example-react/js/index":"./src-example-react/index.js"
 	},
 	"output":{
-		"filename":"[name].lib.js",
-		"path":"./dist/js/",
+		"filename":"[name].js",
+		"path":"./",
 		"chunkFilename":"[name].lib.js",
 		"publicPath":"js/",
 		libraryTarget: 'umd',
@@ -86,8 +87,8 @@ module.exports = {
     "plugins":[
     	new CopyWebpackPlugin([
 			{
-				"from":path.join(__dirname, "src-static"),
-				"to":path.join(__dirname, 'build')
+				"from":path.join(__dirname, "src-example-react/index.html"),
+				"to":path.join(__dirname, 'example-react')
 			}
 		]),
     	new WebpackBuildNotifierPlugin(),
