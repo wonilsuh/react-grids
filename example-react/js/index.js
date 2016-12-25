@@ -21054,9 +21054,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactGridsComponentLib = __webpack_require__(218);
+	var _index = __webpack_require__(218);
 
-	var _reactGridsComponentLib2 = _interopRequireDefault(_reactGridsComponentLib);
+	var _index2 = _interopRequireDefault(_index);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21077,10 +21077,10 @@ return /******/ (function(modules) { // webpackBootstrap
 						'div',
 						{ className: 'base-wrap', key: 'columns-' + baseCount + '-' + columnsCount },
 						_react2.default.createElement(
-							_reactGridsComponentLib2.default.Wrap,
+							_index2.default.Wrap,
 							null,
 							_react2.default.createElement(
-								_reactGridsComponentLib2.default.Column,
+								_index2.default.Column,
 								{ span: base, base: base, className: 'heading' },
 								'Columns: ',
 								(columns.reduce(function (prev, column) {
@@ -21089,11 +21089,11 @@ return /******/ (function(modules) { // webpackBootstrap
 							)
 						),
 						_react2.default.createElement(
-							_reactGridsComponentLib2.default.Wrap,
+							_index2.default.Wrap,
 							null,
 							columns.map(function (span, spanCount) {
 								return _react2.default.createElement(
-									_reactGridsComponentLib2.default.Column,
+									_index2.default.Column,
 									{ base: base, span: span, key: 'span-' + baseCount + '-' + columnsCount + '-' + spanCount },
 									_react2.default.createElement(
 										'div',

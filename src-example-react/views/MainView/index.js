@@ -1,7 +1,7 @@
 "use strict";
 
 import React from 'react';
-import Grids from '../../../dist/js/react-grids-component.lib.js'
+import Grids from '../../../dist/js/index.js'
 
 const samples = {
 	12:[
