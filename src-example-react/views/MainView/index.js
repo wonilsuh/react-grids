@@ -1,7 +1,7 @@
 "use strict";
 
 import React from 'react';
-import Grids from '../../../dist/js/index.js'
+import ReactGrids from '../../../dist/js/index.js'
 
 const samples = {
 	12:[
@@ -28,24 +28,24 @@ const samples = {
 }
 
 const MainView = () => {
-	var output = <div>{
-		Object.keys(samples).map( (base, baseCount) => samples[base].map( (columns, columnsCount) => (
-			<div className="base-wrap" key={`columns-${baseCount}-${columnsCount}`}>
-				<Grids.Wrap>
-					<Grids.Column span={base} base={base} className="heading">
-						Columns: {`${columns.reduce( (prev, column) => `${prev} - ${column}`, '')} / ${base}`.substring(2)}
-					</Grids.Column>
-				</Grids.Wrap>
-				<Grids.Wrap cutoff={640}>{
-					columns.map( (span, spanCount) => (
-						<Grids.Column base={base} span={span} key={`span-${baseCount}-${columnsCount}-${spanCount}`}>
-							<div className="cell">{span}</div>
-						</Grids.Column>
-					))
-				}</Grids.Wrap>
-			</div>
-		)))
-	}</div>;
+	var output = (<div>{
+			Object.keys(samples).map( (base, baseCount) => samples[base].map( (columns, columnsCount) => (
+				<div className="base-wrap" key={`columns-${baseCount}-${columnsCount}`}>
+					<ReactGrids.Wrap cutoff={640} max-width={900}>
+						<ReactGrids.Column span={base} base={base} className="heading">
+							Columns: {`${columns.reduce( (prev, column) => `${prev} - ${column}`, '')} / ${base}`.substring(2)}
+						</ReactGrids.Column>
+					</ReactGrids.Wrap>
+					<ReactGrids.Wrap cutoff={640} max-width={900}>{
+						columns.map( (span, spanCount) => (
+							<ReactGrids.Column base={base} span={span} key={`span-${baseCount}-${columnsCount}-${spanCount}`}>
+								<div className="cell">{span}</div>
+							</ReactGrids.Column>
+						))
+					}</ReactGrids.Wrap>
+				</div>
+			)))
+		}</div>)
 	return output;
 }
 

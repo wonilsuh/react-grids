@@ -58,20 +58,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 
-	__webpack_require__(118);
+	__webpack_require__(119);
 
 /***/ },
 
-/***/ 118:
+/***/ 119:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(119);
+	var content = __webpack_require__(120);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(121)(content, {});
+	var update = __webpack_require__(122)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -89,22 +89,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 119:
+/***/ 120:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(120)();
+	exports = module.exports = __webpack_require__(121)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".grids-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  box-sizing: border-box;\n  width: 100%;\n  /*-----------------------------------------------------\n\t *\t12 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t11 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t10 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t9 columns\n\t */\n  /*-----------------------------------------------------\n\t *\t8 columns\n\t */\n  /*-----------------------------------------------------\n\t *\t7 columns\n\t */ }\n  .grids-wrap.layout-flip {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse; }\n  .grids-wrap .grids-col-12-1 {\n    width: 8.33333%; }\n  .grids-wrap .grids-col-12-2 {\n    width: 16.66667%; }\n  .grids-wrap .grids-col-12-3 {\n    width: 25%; }\n  .grids-wrap .grids-col-12-4 {\n    width: 33.33333%; }\n  .grids-wrap .grids-col-12-5 {\n    width: 41.66667%; }\n  .grids-wrap .grids-col-12-6 {\n    width: 50%; }\n  .grids-wrap .grids-col-12-7 {\n    width: 58.33333%; }\n  .grids-wrap .grids-col-12-8 {\n    width: 66.66667%; }\n  .grids-wrap .grids-col-12-9 {\n    width: 75%; }\n  .grids-wrap .grids-col-12-10 {\n    width: 83.33333%; }\n  .grids-wrap .grids-col-12-11 {\n    width: 91.66667%; }\n  .grids-wrap .grids-col-12-12 {\n    width: 100%; }\n  .grids-wrap .grids-col-11-1 {\n    width: 9.09091%; }\n  .grids-wrap .grids-col-11-2 {\n    width: 18.18182%; }\n  .grids-wrap .grids-col-11-3 {\n    width: 27.27273%; }\n  .grids-wrap .grids-col-11-4 {\n    width: 36.36364%; }\n  .grids-wrap .grids-col-11-5 {\n    width: 45.45455%; }\n  .grids-wrap .grids-col-11-6 {\n    width: 54.54545%; }\n  .grids-wrap .grids-col-11-7 {\n    width: 63.63636%; }\n  .grids-wrap .grids-col-11-8 {\n    width: 72.72727%; }\n  .grids-wrap .grids-col-11-9 {\n    width: 81.81818%; }\n  .grids-wrap .grids-col-11-10 {\n    width: 90.90909%; }\n  .grids-wrap .grids-col-11-11 {\n    width: 100%; }\n  .grids-wrap .grids-col-10-1 {\n    width: 10%; }\n  .grids-wrap .grids-col-10-2 {\n    width: 20%; }\n  .grids-wrap .grids-col-10-3 {\n    width: 30%; }\n  .grids-wrap .grids-col-10-4 {\n    width: 40%; }\n  .grids-wrap .grids-col-10-5 {\n    width: 50%; }\n  .grids-wrap .grids-col-10-6 {\n    width: 60%; }\n  .grids-wrap .grids-col-10-7 {\n    width: 70%; }\n  .grids-wrap .grids-col-10-8 {\n    width: 80%; }\n  .grids-wrap .grids-col-10-9 {\n    width: 90%; }\n  .grids-wrap .grids-col-10-10 {\n    width: 100%; }\n  .grids-wrap .grids-col-9-1 {\n    width: 11.11111%; }\n  .grids-wrap .grids-col-9-2 {\n    width: 22.22222%; }\n  .grids-wrap .grids-col-9-3 {\n    width: 33.33333%; }\n  .grids-wrap .grids-col-9-4 {\n    width: 44.44444%; }\n  .grids-wrap .grids-col-9-5 {\n    width: 55.55556%; }\n  .grids-wrap .grids-col-9-6 {\n    width: 66.66667%; }\n  .grids-wrap .grids-col-9-7 {\n    width: 77.77778%; }\n  .grids-wrap .grids-col-9-8 {\n    width: 88.88889%; }\n  .grids-wrap .grids-col-9-9 {\n    width: 100%; }\n  .grids-wrap .grids-col-8-1 {\n    width: 12.5%; }\n  .grids-wrap .grids-col-8-2 {\n    width: 25%; }\n  .grids-wrap .grids-col-8-3 {\n    width: 37.5%; }\n  .grids-wrap .grids-col-8-4 {\n    width: 50%; }\n  .grids-wrap .grids-col-8-5 {\n    width: 62.5%; }\n  .grids-wrap .grids-col-8-6 {\n    width: 75%; }\n  .grids-wrap .grids-col-8-7 {\n    width: 87.5%; }\n  .grids-wrap .grids-col-8-8 {\n    width: 100%; }\n  .grids-wrap .grids-col-7-1 {\n    width: 14.28571%; }\n  .grids-wrap .grids-col-7-2 {\n    width: 28.57143%; }\n  .grids-wrap .grids-col-7-3 {\n    width: 42.85714%; }\n  .grids-wrap .grids-col-7-4 {\n    width: 57.14286%; }\n  .grids-wrap .grids-col-7-5 {\n    width: 71.42857%; }\n  .grids-wrap .grids-col-7-6 {\n    width: 85.71429%; }\n  .grids-wrap .grids-col-7-7 {\n    width: 100%; }\n  .grids-wrap.align-left {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start; }\n  .grids-wrap.align-center {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center; }\n  .grids-wrap.align-right {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end; }\n  .grids-wrap.cutoff {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .grids-wrap.cutoff [class*=\"grids-col-\"],\n    .grids-wrap.cutoff [class*=\"grids-col-\"] {\n      width: 100%; }\n", ""]);
+	exports.push([module.id, ".react-grids-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  box-sizing: border-box;\n  width: 100%;\n  /*-----------------------------------------------------\n\t *\t12 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t11 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t10 column grid\n\t */\n  /*-----------------------------------------------------\n\t *\t9 columns\n\t */\n  /*-----------------------------------------------------\n\t *\t8 columns\n\t */\n  /*-----------------------------------------------------\n\t *\t7 columns\n\t */ }\n  .react-grids-wrap.layout-flip {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse; }\n  .react-grids-wrap .react-grids-col-12-1 {\n    width: 8.33333%; }\n  .react-grids-wrap .react-grids-col-12-2 {\n    width: 16.66667%; }\n  .react-grids-wrap .react-grids-col-12-3 {\n    width: 25%; }\n  .react-grids-wrap .react-grids-col-12-4 {\n    width: 33.33333%; }\n  .react-grids-wrap .react-grids-col-12-5 {\n    width: 41.66667%; }\n  .react-grids-wrap .react-grids-col-12-6 {\n    width: 50%; }\n  .react-grids-wrap .react-grids-col-12-7 {\n    width: 58.33333%; }\n  .react-grids-wrap .react-grids-col-12-8 {\n    width: 66.66667%; }\n  .react-grids-wrap .react-grids-col-12-9 {\n    width: 75%; }\n  .react-grids-wrap .react-grids-col-12-10 {\n    width: 83.33333%; }\n  .react-grids-wrap .react-grids-col-12-11 {\n    width: 91.66667%; }\n  .react-grids-wrap .react-grids-col-12-12 {\n    width: 100%; }\n  .react-grids-wrap .react-grids-col-11-1 {\n    width: 9.09091%; }\n  .react-grids-wrap .react-grids-col-11-2 {\n    width: 18.18182%; }\n  .react-grids-wrap .react-grids-col-11-3 {\n    width: 27.27273%; }\n  .react-grids-wrap .react-grids-col-11-4 {\n    width: 36.36364%; }\n  .react-grids-wrap .react-grids-col-11-5 {\n    width: 45.45455%; }\n  .react-grids-wrap .react-grids-col-11-6 {\n    width: 54.54545%; }\n  .react-grids-wrap .react-grids-col-11-7 {\n    width: 63.63636%; }\n  .react-grids-wrap .react-grids-col-11-8 {\n    width: 72.72727%; }\n  .react-grids-wrap .react-grids-col-11-9 {\n    width: 81.81818%; }\n  .react-grids-wrap .react-grids-col-11-10 {\n    width: 90.90909%; }\n  .react-grids-wrap .react-grids-col-11-11 {\n    width: 100%; }\n  .react-grids-wrap .react-grids-col-10-1 {\n    width: 10%; }\n  .react-grids-wrap .react-grids-col-10-2 {\n    width: 20%; }\n  .react-grids-wrap .react-grids-col-10-3 {\n    width: 30%; }\n  .react-grids-wrap .react-grids-col-10-4 {\n    width: 40%; }\n  .react-grids-wrap .react-grids-col-10-5 {\n    width: 50%; }\n  .react-grids-wrap .react-grids-col-10-6 {\n    width: 60%; }\n  .react-grids-wrap .react-grids-col-10-7 {\n    width: 70%; }\n  .react-grids-wrap .react-grids-col-10-8 {\n    width: 80%; }\n  .react-grids-wrap .react-grids-col-10-9 {\n    width: 90%; }\n  .react-grids-wrap .react-grids-col-10-10 {\n    width: 100%; }\n  .react-grids-wrap .react-grids-col-9-1 {\n    width: 11.11111%; }\n  .react-grids-wrap .react-grids-col-9-2 {\n    width: 22.22222%; }\n  .react-grids-wrap .react-grids-col-9-3 {\n    width: 33.33333%; }\n  .react-grids-wrap .react-grids-col-9-4 {\n    width: 44.44444%; }\n  .react-grids-wrap .react-grids-col-9-5 {\n    width: 55.55556%; }\n  .react-grids-wrap .react-grids-col-9-6 {\n    width: 66.66667%; }\n  .react-grids-wrap .react-grids-col-9-7 {\n    width: 77.77778%; }\n  .react-grids-wrap .react-grids-col-9-8 {\n    width: 88.88889%; }\n  .react-grids-wrap .react-grids-col-9-9 {\n    width: 100%; }\n  .react-grids-wrap .react-grids-col-8-1 {\n    width: 12.5%; }\n  .react-grids-wrap .react-grids-col-8-2 {\n    width: 25%; }\n  .react-grids-wrap .react-grids-col-8-3 {\n    width: 37.5%; }\n  .react-grids-wrap .react-grids-col-8-4 {\n    width: 50%; }\n  .react-grids-wrap .react-grids-col-8-5 {\n    width: 62.5%; }\n  .react-grids-wrap .react-grids-col-8-6 {\n    width: 75%; }\n  .react-grids-wrap .react-grids-col-8-7 {\n    width: 87.5%; }\n  .react-grids-wrap .react-grids-col-8-8 {\n    width: 100%; }\n  .react-grids-wrap .react-grids-col-7-1 {\n    width: 14.28571%; }\n  .react-grids-wrap .react-grids-col-7-2 {\n    width: 28.57143%; }\n  .react-grids-wrap .react-grids-col-7-3 {\n    width: 42.85714%; }\n  .react-grids-wrap .react-grids-col-7-4 {\n    width: 57.14286%; }\n  .react-grids-wrap .react-grids-col-7-5 {\n    width: 71.42857%; }\n  .react-grids-wrap .react-grids-col-7-6 {\n    width: 85.71429%; }\n  .react-grids-wrap .react-grids-col-7-7 {\n    width: 100%; }\n  .react-grids-wrap.align-left {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start; }\n  .react-grids-wrap.align-center {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center; }\n  .react-grids-wrap.align-right {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end; }\n  .react-grids-wrap.cutoff {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .react-grids-wrap.cutoff [class*=\"react-grids-col-\"],\n    .react-grids-wrap.cutoff [class*=\"react-grids-col-\"] {\n      width: 100%; }\n", ""]);
 
 	// exports
 
 
 /***/ },
 
-/***/ 120:
+/***/ 121:
 /***/ function(module, exports) {
 
 	/*
@@ -161,7 +161,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 121:
+/***/ 122:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
