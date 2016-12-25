@@ -16,6 +16,8 @@ An easy to use simple grid layout system for React. Allows to specify base grids
 
     `align:string` // when the columns don't fill the fulll width, how to align them within the wrap. accepts left | center | right.
 
+    `max-width:int` // set maximum width for the layout
+
 `ReactGrids.Column`
 
     `base:int` // the base grids. accepts 1 to 12
@@ -33,6 +35,7 @@ const YourComponent = (props) => (
         cutoff={599}
         align="center"
         className="my-grids-wrapper"
+        max-width={900}
     >
         <ReactGrids.Column
             base={12}
