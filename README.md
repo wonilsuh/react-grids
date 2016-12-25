@@ -11,11 +11,15 @@ An easy to use simple grid layout system for React. Allows to specify base grids
 ## Properties
 
 `ReactGrids.Wrap`
+
     `cutoff:int` // when to break from grids to single stack for responsive layouts
+
     `align:string` // when the columns don't fill the fulll width, how to align them within the wrap. accepts left | center | right.
 
 `ReactGrids.Column`
+
     `base:int` // the base grids. accepts 1 to 12
+
     `span:int` // how many base grids should this column span over. should be 1 <= x <= base.
 
 ## Use
