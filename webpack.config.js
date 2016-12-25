@@ -57,7 +57,7 @@ var loaders = [
 
 module.exports = {
 	"entry":{
-		"dist/js/react-grids-component.lib":"./src/index.js",
+		"dist/js/index":"./src/index.js",
 		"dist/js/react-grids-css-loader":"./src/css-loader.js",
 		"example-react/js/index":"./src-example-react/index.js"
 	},
