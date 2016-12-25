@@ -1,6 +1,6 @@
 {
   "name": "react-grids",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "grid system for react",
   "main": "dist/js/react-grid-component.lib.js",
   "dependencies": {},
