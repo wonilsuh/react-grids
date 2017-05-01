@@ -54,31 +54,31 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ({
 
 /***/ 0:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	__webpack_require__(119);
+	__webpack_require__(123);
 
-/***/ },
+/***/ }),
 
-/***/ 119:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 123:
+/***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(120);
+	var content = __webpack_require__(124);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(122)(content, {});
+	var update = __webpack_require__(126)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./../node_modules/postcss-loader/index.js!./grids.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./../node_modules/postcss-loader/index.js!./grids.scss");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/index.js!../node_modules/postcss-loader/index.js!./grids.scss", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/index.js!../node_modules/postcss-loader/index.js!./grids.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -87,12 +87,12 @@ return /******/ (function(modules) { // webpackBootstrap
 		module.hot.dispose(function() { update(); });
 	}
 
-/***/ },
+/***/ }),
 
-/***/ 120:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 124:
+/***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(121)();
+	exports = module.exports = __webpack_require__(125)();
 	// imports
 
 
@@ -102,10 +102,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	// exports
 
 
-/***/ },
+/***/ }),
 
-/***/ 121:
-/***/ function(module, exports) {
+/***/ 125:
+/***/ (function(module, exports) {
 
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
@@ -159,10 +159,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ },
+/***/ }),
 
-/***/ 122:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 126:
+/***/ (function(module, exports, __webpack_require__) {
 
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
@@ -177,7 +177,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			};
 		},
 		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+			return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
 		}),
 		getHeadElement = memoize(function () {
 			return document.head || document.getElementsByTagName("head")[0];
@@ -412,7 +412,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 
-/***/ }
+/***/ })
 
 /******/ })
 });
