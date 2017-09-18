@@ -65,7 +65,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Wrap2 = _interopRequireDefault(_Wrap);
 
-	var _Column = __webpack_require__(130);
+	var _Column = __webpack_require__(135);
 
 	var _Column2 = _interopRequireDefault(_Column);
 
@@ -163,7 +163,7 @@ return /******/ (function(modules) { // webpackBootstrap
 					_PageWidthControl2.default,
 					{
 						'max-width': this.props['max-width'],
-						style: this.props.style
+						style: this.props.pageWidthControlStyle
 					},
 					_react2.default.createElement(
 						'div',
@@ -6390,11 +6390,15 @@ return /******/ (function(modules) { // webpackBootstrap
 		value: true
 	});
 
+	var _extends2 = __webpack_require__(128);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
 	var _react = __webpack_require__(88);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(128);
+	__webpack_require__(133);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6403,9 +6407,9 @@ return /******/ (function(modules) { // webpackBootstrap
 			'div',
 			{
 				className: 'react-grids-page-width-control ' + (props.className ? props.className : ''),
-				style: {
+				style: (0, _extends3.default)({
 					maxWidth: (props['max-width'] || 1440).toString().replace('px', '') + 'px'
-				}
+				}, props.style)
 			},
 			props.children
 		);
@@ -6417,10 +6421,98 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	exports.__esModule = true;
+
+	var _assign = __webpack_require__(129);
+
+	var _assign2 = _interopRequireDefault(_assign);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _assign2.default || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];
+
+	    for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }
+
+	  return target;
+	};
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(130), __esModule: true };
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(131);
+	module.exports = __webpack_require__(15).Object.assign;
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $export = __webpack_require__(14);
+
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(132)});
+
+/***/ }),
+/* 132 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	// 19.1.2.1 Object.assign(target, source, ...)
+	var getKeys  = __webpack_require__(47)
+	  , gOPS     = __webpack_require__(71)
+	  , pIE      = __webpack_require__(72)
+	  , toObject = __webpack_require__(5)
+	  , IObject  = __webpack_require__(50)
+	  , $assign  = Object.assign;
+
+	// should work with symbols and should have deterministic property order (V8 bug)
+	module.exports = !$assign || __webpack_require__(24)(function(){
+	  var A = {}
+	    , B = {}
+	    , S = Symbol()
+	    , K = 'abcdefghijklmnopqrst';
+	  A[S] = 7;
+	  K.split('').forEach(function(k){ B[k] = k; });
+	  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
+	}) ? function assign(target, source){ // eslint-disable-line no-unused-vars
+	  var T     = toObject(target)
+	    , aLen  = arguments.length
+	    , index = 1
+	    , getSymbols = gOPS.f
+	    , isEnum     = pIE.f;
+	  while(aLen > index){
+	    var S      = IObject(arguments[index++])
+	      , keys   = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S)
+	      , length = keys.length
+	      , j      = 0
+	      , key;
+	    while(length > j)if(isEnum.call(S, key = keys[j++]))T[key] = S[key];
+	  } return T;
+	} : $assign;
+
+/***/ }),
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(129);
+	var content = __webpack_require__(134);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(126)(content, {});
@@ -6440,7 +6532,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ }),
-/* 129 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(125)();
@@ -6454,7 +6546,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 130 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';

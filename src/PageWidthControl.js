@@ -8,7 +8,8 @@ const PageWidthControl = (props) => (
 	<div 
 		className={`react-grids-page-width-control ${props.className ? props.className : ''}`}
 		style={{
-			maxWidth:(props['max-width'] || 1440).toString().replace('px', '')+'px'
+			maxWidth:(props['max-width'] || 1440).toString().replace('px', '')+'px',
+			...props.style
 		}}
 	>
 		{props.children}

@@ -31,7 +31,7 @@ class Wrap extends React.Component{
 		return (
 			<PageWidthControl 
 				max-width={this.props['max-width']}
-				style={this.props.style}
+				style={this.props.pageWidthControlStyle}
 			>
 				<div 
 					className={`
