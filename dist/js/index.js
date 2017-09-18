@@ -161,7 +161,10 @@ return /******/ (function(modules) { // webpackBootstrap
 			value: function render() {
 				return _react2.default.createElement(
 					_PageWidthControl2.default,
-					{ 'max-width': this.props['max-width'] },
+					{
+						'max-width': this.props['max-width'],
+						style: this.props.style
+					},
 					_react2.default.createElement(
 						'div',
 						{

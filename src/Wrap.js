@@ -29,7 +29,10 @@ class Wrap extends React.Component{
 
 	render(){
 		return (
-			<PageWidthControl max-width={this.props['max-width']}>
+			<PageWidthControl 
+				max-width={this.props['max-width']}
+				style={this.props.style}
+			>
 				<div 
 					className={`
 						react-grids-wrap ${this.props.className ? this.props.className : ''}
